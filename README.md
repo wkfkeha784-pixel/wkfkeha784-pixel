@@ -5,6 +5,8 @@
 AWS·OpenStack 기반 프로젝트에서 인프라 구축, Kubernetes 운영, 모니터링, 장애 복구 검증을 경험하고 있습니다.  
 육군 정보통신 장교로 쌓은 조직·절차 기반 운영 경험을 Cloud Infrastructure 역량으로 확장하고 있습니다.
 
+[Web Portfolio](https://cloud-infra-portfolio.vercel.app/) · [Email](mailto:wkfkeha784@gmail.com)
+
 ## Core Focus
 
 - **Infrastructure Integration** — AWS Web–WAS 구축 · E2E 요청 흐름 검증
@@ -46,7 +48,8 @@ OpenStack 기반 Virtual Lab Platform — **Ongoing**
 
 ## Contact
 
-- [wkfkeha784@gmail.com](mailto:wkfkeha784@gmail.com)
+- Web: [cloud-infra-portfolio.vercel.app](https://cloud-infra-portfolio.vercel.app/)
+- Email: [wkfkeha784@gmail.com](mailto:wkfkeha784@gmail.com)
 
 ---
 
