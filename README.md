@@ -7,55 +7,36 @@ AWS·OpenStack 기반 프로젝트에서 인프라 구축, Kubernetes 운영, �
 
 ## Core Focus
 
-- **Infrastructure Integration** — AWS Web–WAS 구축 및 계층 간 요청 흐름 통합 검증
-- **Kubernetes Operations** — Redis–Kafka 연동, Kafka Lag 기반 KEDA 운영
-- **Observability & Recovery** — Monitoring 재구성, 복구 후 Service·Load Balancer 정상화 검증
-- **Contract-driven Collaboration** — Backend Contract, Frontend 상태·권한·오류 처리
+- **Infrastructure Integration** — AWS Web–WAS 구축 · E2E 요청 흐름 검증
+- **Kubernetes Operations** — Redis–Kafka 연동 · Kafka Lag 기반 KEDA 운영
+- **Observability & Recovery** — Monitoring 재구성 · 서비스/LB 정상화 검증
+- **Contract-driven Collaboration** — Backend Contract · Frontend 상태·권한·오류 처리
 
 ## Selected Projects
 
 ### Team Durian
-**수강신청 폭주 대응을 위한 대기열 오토스케일링 플랫폼**
-
-- Kubernetes·Kafka 운영
-- Redis–Kafka E2E 확인
-- Kafka Lag 기반 KEDA 운영
-- Monitoring 인수·재구성
-- Backup / Recovery 담당
+수강신청 폭주 대응 대기열 오토스케일링 플랫폼  
+**Kubernetes·Kafka 운영 · KEDA · Monitoring · Backup/Recovery**
 
 `OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`
 
 ### Bluebell
-**AWS + On-Premise 하이브리드 3-Tier 인프라**
-
-- Team Lead
-- Web–WAS 구축
-- AWS / Web–WAS–DB 통합 검증
-- 장애 이후 Service·Load Balancer·Monitoring 정상화 검증
+AWS + On-Premise 하이브리드 3-Tier 인프라  
+**Team Lead · Web–WAS 구축 · AWS/Web–WAS–DB 통합 검증**
 
 `AWS` `Nginx` `Flask` `Docker Swarm` `Ansible` `Prometheus` `Grafana`
 
 ### OneReport
-**복합사고 다기관 공동대응 운영 플랫폼**
+복합사고 다기관 공동대응 운영 플랫폼  
+**Backend 공동 담당 · Domain/DB · Routing · Timeline · Rule-based Analysis**
 
-- Backend 공동 담당
-- Report / Incident Domain·DB
-- Agency Routing·Timeline
-- Rule-based Analysis
-- Test / Demo Smoke Test
-
-[Repository](https://github.com/ktcloud4-SL/hackathon)
+[Repository](https://github.com/ktcloud4-SL/hackathon) · [PR #9 — Core Domain/DB](https://github.com/ktcloud4-SL/hackathon/pull/9) · [PR #27 — Rule-based Analysis](https://github.com/ktcloud4-SL/hackathon/pull/27)
 
 ### Labbit
-**OpenStack 기반 Virtual Lab Platform — Ongoing**
+OpenStack 기반 Virtual Lab Platform — **Ongoing**  
+**Frontend / Design · Contract Consumer · State/Permission/Error Safety · Test/CI**
 
-- Frontend / Design
-- API Contract Consumer
-- 상태·권한·오류 안전 처리
-- Test / CI
-- Functional Prototype
-
-[Repository](https://github.com/ktcloud4-SL/labbit-app)
+[Repository](https://github.com/ktcloud4-SL/labbit-app) · [PR #28 — Functional Prototype](https://github.com/ktcloud4-SL/labbit-app/pull/28) · [PR #23 — Session/Mutation Safety](https://github.com/ktcloud4-SL/labbit-app/pull/23)
 
 ## Current Focus
 
@@ -65,7 +46,7 @@ AWS·OpenStack 기반 프로젝트에서 인프라 구축, Kubernetes 운영, �
 
 ## Contact
 
-- Email: [wkfkeha784@gmail.com](mailto:wkfkeha784@gmail.com)
+- [wkfkeha784@gmail.com](mailto:wkfkeha784@gmail.com)
 
 ---
 
