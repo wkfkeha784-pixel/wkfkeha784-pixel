@@ -23,7 +23,7 @@ AWS·OpenStack 기반 프로젝트에서 인프라 구축, Kubernetes 운영, �
 `OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`
 
 ### Bluebell
-AWS + On-Premise 하이브리드 3-Tier 인프라  
+AWS Web/WAS + Local DB 하이브리드 3-Tier 인프라  
 **Team Lead · Web–WAS 구축 · AWS/Web–WAS–DB 통합 검증**
 
 `AWS` `Nginx` `Flask` `Docker Swarm` `Ansible` `Prometheus` `Grafana`
