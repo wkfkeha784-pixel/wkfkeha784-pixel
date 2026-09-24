@@ -20,13 +20,15 @@ AWS·OpenStack 기반 프로젝트에서 인프라 구축, Kubernetes 운영, �
 수강신청 폭주 대응 대기열 오토스케일링 플랫폼  
 **Kubernetes·Kafka 운영 · KEDA · Monitoring · Backup/Recovery**
 
-`OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`
+`OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`  
+[Case Study](https://cloud-infra-portfolio.vercel.app/projects/durian)
 
 ### Bluebell
 AWS Web/WAS + Local DB 하이브리드 3-Tier 인프라  
 **Team Lead · Web–WAS 구축 · AWS/Web–WAS–DB 통합 검증**
 
-`AWS` `Nginx` `Flask` `Docker Swarm` `Ansible` `Prometheus` `Grafana`
+`AWS` `Nginx` `Flask` `Docker Swarm` `Ansible` `Prometheus` `Grafana`  
+[Case Study](https://cloud-infra-portfolio.vercel.app/projects/bluebell)
 
 ### OneReport
 복합사고 다기관 공동대응 운영 플랫폼  
@@ -44,7 +46,7 @@ OpenStack 기반 Virtual Lab Platform — **Ongoing**
 
 - **KT Cloud Infrastructure Bootcamp** · 2026.05.12–2026.12.03
 - **AWS SAA-C03** 준비 중
-- **GCP Cloud Operations 개인 프로젝트** 진행 중
+- **GCP Cloud Operations 개인 프로젝트** · 설계·환경 준비 중
 
 ## Contact
 
