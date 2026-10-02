@@ -38,7 +38,8 @@ AWS Web/WAS + Local DB 하이브리드 3-Tier 인프라
 복합사고 다기관 공동대응 운영 플랫폼  
 **Backend — Domain / DB / Routing / Contract / Rule Classification**
 
-[Repository](https://github.com/ktcloud4-SL/hackathon) · [PR #9 — Core Domain/DB](https://github.com/ktcloud4-SL/hackathon/pull/9) · [PR #27 — Rule-based Analysis](https://github.com/ktcloud4-SL/hackathon/pull/27)
+`[MY]` PR #9/#14/#27/#30 — Backend Evidence · `[PROJECT]` Final 운영 Smoke · FINAL: PASS  
+팀 저장소는 비공개이므로 공개 Profile에서는 직접 Repository/PR 링크를 노출하지 않습니다.
 
 ### Labbit
 OpenStack 기반 Virtual Lab Platform — **IN PROGRESS · 2026-10-03**  
