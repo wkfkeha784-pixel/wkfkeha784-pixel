@@ -19,7 +19,7 @@ AWS·OpenStack·Kubernetes 환경에서 서비스를 구성하고, 부하와 장
 
 ### Team Durian · Kubernetes 운영과 부하 대응
 
-수강신청 폭주에 대응하는 대기열 플랫폼에서 Kubernetes·Redis·Kafka·KEDA 운영, 모니터링과 Terraform 작업을 맡았습니다.
+수강신청 폭주에 대응하는 대기열 플랫폼에서 Kubernetes·Redis·Kafka·KEDA 운영, 모니터링 인수·재구성과 worker-03 복구 검증을 맡았습니다.
 
 - 외부 HTTP 요청 **300/300 수락**과 Consumer **1→4→1** 확장·축소를 확인했습니다.
 - Terraform으로 worker-03을 다시 생성하고 클러스터에 재가입시켜 인프라 변경을 복구했습니다.

@@ -15,6 +15,7 @@
 
 | 기록 | 내용 |
 |---|---|
+| [포트폴리오·공개 GitHub 최종 검토](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio/blob/main/docs/FINAL_PUBLIC_REVIEW_2026-10-11.md) | 공개 진입 동선·역할 근거 대조·소개 수정·테스트의 연락처 제거와 검증 |
 | [2026-10-10 프로필 소개 정리](GITHUB_PROFILE_POLISH_2026-10-10.md) | 프로젝트별 역할·결과·조건과 링크 정리 |
 | [공개 화면 점검과 설정 완료](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio/blob/main/docs/PUBLIC_FIRST_IMPRESSION_REVIEW_2026-10-10.md) | 두 공개 저장소·계정 설정·포크 삭제 근거·후속 문구 정리 |
 | [문서 시각화 기준](../DOCUMENTATION_VISUALIZATION_GUIDE.md) | 개인 문서에서 그림·표·문장을 선택하는 기준 |
@@ -25,7 +26,7 @@
 
 이번 점검은 공개 소개와 링크 중심입니다. PC의 로컬 작업 폴더·원격 설정이나 모든 과거 커밋을 검사한 것은 아닙니다.
 
-## 최종 반영 확인 · 2026-10-11
+## 이전 소개 정리 반영 확인 · 2026-10-11
 
 | 항목 | 확인 결과 |
 |---|---|
@@ -43,3 +44,16 @@ GitHub 반영본은 작성본과 일치했고, 변경 파일은 프로필 3개·
 브라우저 테스트는 GitHub Actions의 빌드·Preview 환경에서 실행된 결과입니다. 실제 공개 도메인을 새 브라우저로 조작하거나 실기기·공유 플랫폼 캐시를 추가 검사한 것은 아닙니다. 공개 배포는 commit·READY·HTTP 응답으로 확인했습니다.
 
 계정 설정 1–4번과 이번 공개 소개 정리를 완료했습니다. 새 프로젝트 근거나 링크 변경이 생기면 위 갱신 기준에 따라 해당 부분을 확인합니다.
+
+## 이번 최종 검토 · 2026-10-11
+
+프로필 Durian 소개의 담당 범위를 모니터링 인수·재구성과 worker-03 복구 검증으로 구체화했습니다. 포트폴리오에서는 첫 화면·프로젝트 소개의 영어 혼용을 줄였고, 공개 테스트 파일에 남아 있던 실제 전화번호를 일반 패턴 검사로 대체했습니다.
+
+- 웹 수정 [PR #24](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio/pull/24) 병합. PR과 main의 Browser QA 각각 54개 PASS.
+- 앱 기준 `90b777dd70078d8b587b6dae564291707a62c791`의 Vercel Production READY, 실제 공개 JS/CSS가 검증 빌드와 일치.
+- 결과 기록 [`5e94c19`](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio/commit/5e94c1979db88db0f9d1c5a1b71d5ddd931a5c08)은 관리 문서만 변경합니다.
+- [전체 검토 결과와 근거](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio/blob/main/docs/FINAL_PUBLIC_REVIEW_2026-10-11.md)에 자료 대조, 새 캡처, 링크와 접속 제한을 기록했습니다.
+- 현재 소스에서 번호를 제거한 것과 과거 커밋·PR 이력을 완전히 제거한 것은 다릅니다. 과거 이력을 재작성하지 않았습니다.
+- Labbit 실제 OpenStack VM PTY/SFTP·Preview/Live/AWS 등 후속 검증 상태는 새 근거 없이 완료로 바꾸지 않았습니다.
+
+두 공개 저장소와 고정 순서는 유지합니다. 남아 있는 필수 계정 설정 단계는 없습니다. 이번 작업은 보이는 소개와 관련 동작의 검토이며 전체 과거 Git 이력·팀 서비스의 재실증 검사로 확대하지 않습니다.
