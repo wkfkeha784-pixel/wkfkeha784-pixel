@@ -2,7 +2,7 @@
 
 > 구축에서 끝내지 않고, 운영 상태를 관측하고 장애 이후 정상화까지 검증합니다.
 
-AWS·OpenStack·Kubernetes 환경에서 서비스를 구성하고, 부하와 장애 상황에서 어떻게 동작하는지 확인해 왔습니다. 구축한 환경의 상태를 관측하고, 문제가 생겼을 때 원인을 찾아 복구하는 일에 관심이 있습니다.
+KT Cloud 교육·팀 프로젝트에서 AWS·OpenStack·Kubernetes 환경의 서비스를 구성하고, 부하와 장애 상황에서 어떻게 동작하는지 확인해 왔습니다. 구축한 환경의 상태를 관측하고, 문제가 생겼을 때 원인을 찾아 복구하는 일에 관심이 있습니다.
 
 육군 정보통신 장교로 근무하며 장비와 인원, 운영 절차를 관리했습니다. 지금은 이 경험을 바탕으로 클라우드 인프라 엔지니어 취업을 준비하고 있습니다.
 
@@ -12,7 +12,7 @@ AWS·OpenStack·Kubernetes 환경에서 서비스를 구성하고, 부하와 장
 
 - **AWS 서비스 구성·복구:** Web–WAS 연결, 인스턴스 교체 후 서비스 정상화 확인
 - **Kubernetes 운영:** Redis·Kafka 운영, Kafka Lag에 따른 KEDA 확장·축소
-- **인프라 관리·관측:** Terraform으로 변경된 인프라 복구, 실행 상태와 설정·모니터링 비교
+- **인프라 관리·관측:** Terraform으로 worker-03 재생성·재가입 검증, 실행 상태와 설정·모니터링 비교
 - **서비스 연동:** Backend 도메인·API 구현, Frontend HTTP·WebSocket 연동과 오류 처리
 
 ## 프로젝트
@@ -22,7 +22,7 @@ AWS·OpenStack·Kubernetes 환경에서 서비스를 구성하고, 부하와 장
 수강신청 폭주에 대응하는 대기열 플랫폼에서 Kubernetes·Redis·Kafka·KEDA 운영, 모니터링 인수·재구성과 worker-03 복구 검증을 맡았습니다.
 
 - 외부 HTTP 요청 **300/300 수락**과 Consumer **1→4→1** 확장·축소를 확인했습니다.
-- Terraform으로 worker-03을 다시 생성하고 클러스터에 재가입시켜 인프라 변경을 복구했습니다.
+- Terraform으로 단일 노드 worker-03을 재생성하고 클러스터에 재가입시켰습니다. 최종 상태는 `Ready,SchedulingDisabled`입니다.
 - HTTP 200은 비동기 요청을 수락했다는 뜻입니다. DB에 300건이 모두 저장됐다는 결과는 아닙니다.
 
 `OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`
