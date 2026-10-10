@@ -2,82 +2,73 @@
 
 > 구축에서 끝내지 않고, 운영 상태를 관측하고 장애 이후 정상화까지 검증합니다.
 
-AWS·OpenStack·Kubernetes 환경에서 서비스 경로를 구성하고, 부하·장애·Drift·권한/오류 상황을 근거로 확인하며 정상 상태로 수렴시키는 프로젝트 경험을 쌓고 있습니다.  
-육군 정보통신 장교로 쌓은 조직·절차 기반 운영 경험을 Cloud Infrastructure 역량으로 확장하고 있습니다.
+AWS·OpenStack·Kubernetes 환경에서 서비스를 구성하고, 부하와 장애 상황에서 어떻게 동작하는지 확인해 왔습니다. 구축한 환경의 상태를 관측하고, 문제가 생겼을 때 원인을 찾아 복구하는 일에 관심이 있습니다.
 
-**[Web Portfolio](https://cloud-infra-portfolio.vercel.app/)** · [Portfolio Repository](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio) · [Email](mailto:wkfkeha784@gmail.com)
+육군 정보통신 장교로 근무하며 장비와 인원, 운영 절차를 관리했습니다. 지금은 이 경험을 바탕으로 클라우드 인프라 엔지니어 취업을 준비하고 있습니다.
 
-## Core Focus
+**[포트폴리오](https://cloud-infra-portfolio.vercel.app/)** · [포트폴리오 소스](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio) · [이메일](mailto:wkfkeha784@gmail.com)
 
-- **Infrastructure Integration & Recovery** — AWS 3-Tier 서비스 통합 · 장애 이후 정상화 검증
-- **Kubernetes Operations** — Kafka Lag 기반 KEDA 확장·축소 · Redis/Kafka 운영
-- **IaC & Observability** — Terraform Drift 복구 · Runtime과 Manifest·Monitoring 정합
-- **Contract-driven Integration** — Backend Domain/API · Frontend HTTP/WebSocket Consumer
+## 주요 경험
 
-## Selected Projects
+- **AWS 서비스 구성·복구:** Web–WAS 연결, 인스턴스 교체 후 서비스 정상화 확인
+- **Kubernetes 운영:** Redis·Kafka 운영, Kafka Lag에 따른 KEDA 확장·축소
+- **인프라 관리·관측:** Terraform으로 변경된 인프라 복구, 실행 상태와 설정·모니터링 비교
+- **서비스 연동:** Backend 도메인·API 구현, Frontend HTTP·WebSocket 연동과 오류 처리
+
+## 프로젝트
 
 ### Team Durian · Kubernetes 운영과 부하 대응
 
-수강신청 폭주 대응 대기열 오토스케일링 플랫폼
+수강신청 폭주에 대응하는 대기열 플랫폼에서 Kubernetes·Redis·Kafka·KEDA 운영, 모니터링과 Terraform 작업을 맡았습니다.
 
-**담당** — Kubernetes · Redis/Kafka/KEDA 운영 · Monitoring · Terraform
-
-- **개인 검증:** 외부 HTTP 요청 **300/300 수락** · Consumer **1→4→1** 확장·축소
-- **복구 경험:** Terraform으로 worker-03 Drift 복구 · 노드 재생성·클러스터 재가입
-- **검증 조건:** HTTP 200은 비동기 요청 수락 기준이며, DB 300건 전체 Commit 완료를 의미하지 않습니다.
+- 외부 HTTP 요청 **300/300 수락**과 Consumer **1→4→1** 확장·축소를 확인했습니다.
+- Terraform으로 worker-03을 다시 생성하고 클러스터에 재가입시켜 인프라 변경을 복구했습니다.
+- HTTP 200은 비동기 요청을 수락했다는 뜻입니다. DB에 300건이 모두 저장됐다는 결과는 아닙니다.
 
 `OpenStack` `Kubernetes` `Kafka` `Redis` `KEDA` `Prometheus` `Grafana`
 
-[역할·운영 흐름·검증 근거 보기 →](https://cloud-infra-portfolio.vercel.app/projects/durian)
+[담당 역할과 검증 결과 →](https://cloud-infra-portfolio.vercel.app/projects/durian)
 
 ### Bluebell · AWS 서비스 통합과 복구
 
-AWS Web/WAS + Local DB 하이브리드 3-Tier 인프라
+AWS Web/WAS와 로컬 DB를 연결한 하이브리드 3-Tier 프로젝트입니다. 팀장을 맡아 Web–WAS 구축과 AWS·복구 흐름의 통합 검증을 담당했습니다.
 
-**담당** — Team Lead · Web–WAS 구축 · AWS/Recovery 통합 검증
-
-- **개인 검증:** ASG Replacement 이후 서비스·Target Group·HTTP 응답 정상화 확인
-- **팀 검증 조건:** 최종 E2E는 EventBridge Rule 2개를 DISABLED로 유지한 통제 실행입니다. EventBridge → SSM Trigger 설계와 구분합니다.
+- ASG가 인스턴스를 교체한 뒤 서비스·Target Group·HTTP 응답이 정상화되는지 확인했습니다.
+- 팀의 최종 E2E는 EventBridge 규칙 2개를 비활성화한 통제 실행입니다. EventBridge → SSM 자동 실행 설계와 구분해 기록했습니다.
 
 `AWS` `Nginx` `Flask` `Docker Swarm` `Ansible` `Prometheus` `Grafana`
 
-[서비스 경로·Replacement 복구 근거 보기 →](https://cloud-infra-portfolio.vercel.app/projects/bluebell)
+[서비스 구성과 복구 검증 →](https://cloud-infra-portfolio.vercel.app/projects/bluebell)
 
-### OneReport · Backend 도메인과 API 계약
+### OneReport · Backend 도메인과 API
 
-복합사고 다기관 공동대응 운영 플랫폼
+복합사고에 여러 기관이 공동 대응하는 플랫폼입니다. Backend의 도메인·DB, 라우팅, API 계약과 규칙 기반 분석을 구현했습니다.
 
-**담당** — Backend · Domain/DB · Routing · Contract · Rule Classification
+- 개인 구현·검증 근거는 PR #9/#14/#27/#30에 정리했습니다.
+- 팀은 PR #30 당시 health 502 문제를 배포 정상화 후 해결했고, 최종 운영 Smoke Test에서 **PASS**를 확인했습니다.
+- 팀 저장소는 비공개이며, 상세 페이지에서 공개 가능한 검증 자료를 제공합니다.
 
-- **개인 기여:** PR #9/#14/#27/#30 기반 Backend 구현·검증
-- **팀 결과:** PR #30 시점 health 502 이후 배포 정상화 · 최종 운영 Smoke **FINAL: PASS**
-- Rule-based Analysis를 구현했습니다. 비공개 팀 저장소의 Repository/PR 직접 링크는 공개하지 않습니다.
+[구현 범위와 운영 검증 →](https://cloud-infra-portfolio.vercel.app/projects/onereport)
 
-[도메인·개인 기여·운영 검증 보기 →](https://cloud-infra-portfolio.vercel.app/projects/onereport)
+### Labbit · Frontend 연동과 Workspace
 
-### Labbit · Frontend 계약 구현과 Workspace 통합
+OpenStack 기반 실습 환경 플랫폼입니다. Frontend·디자인을 맡아 HTTP·WebSocket 연동, 인증·권한·오류 화면과 테스트·CI를 작업했습니다.
 
-OpenStack 기반 Virtual Lab Platform · **IN PROGRESS · 2026-10-10 기준**
+**진행 중 · 2026-10-10 기준**
 
-**담당** — Frontend/Design · HTTP/WebSocket Consumer · Auth/Permission/Error UX · Test/CI
+- Terminal·파일 기능을 구현한 **PR #62**가 2026-10-07 팀 `main`에 병합됐습니다.
+- 코드·CI에서 Terminal 세션과 재연결, 파일 편집 보호와 HTTP 412 충돌 처리를 검증했습니다.
+- Auth/Class 흐름은 실제 Backend와 브라우저로 확인했습니다.
+- 실제 OpenStack VM의 PTY/SFTP 연동은 후속 통합 검증 범위입니다. 관련 작업은 LBT-21/LBT-22입니다.
 
-- **개인 기여:** Terminal·File Consumer **PR #62 main 병합** · 2026-10-07
-- **코드·CI 검증:** Terminal 세션·재연결 · File 412 충돌 보호·편집 보호
-- **Browser 검증:** Auth/Class 실제 Backend 흐름 확인
-- **후속 통합 검증:** 실제 OpenStack VM PTY/SFTP E2E · LBT-21/LBT-22
+[상세 →](https://cloud-infra-portfolio.vercel.app/projects/labbit) · [팀 저장소](https://github.com/ktcloud4-SL/labbit-app) · [PR #62 — Terminal·파일 연동](https://github.com/ktcloud4-SL/labbit-app/pull/62) · [PR #59 — Workspace 진입 검증](https://github.com/ktcloud4-SL/labbit-app/pull/59)
 
-[Case Study →](https://cloud-infra-portfolio.vercel.app/projects/labbit) · [Repository](https://github.com/ktcloud4-SL/labbit-app) · [PR #62 — Terminal·File 통합](https://github.com/ktcloud4-SL/labbit-app/pull/62) · [PR #59 — Workspace 진입 회귀 검증](https://github.com/ktcloud4-SL/labbit-app/pull/59)
-
-## Current Focus
+## 학습 중
 
 - **KT Cloud Infrastructure Bootcamp** · 2026.05.12–2026.12.03
-- **AWS SAA-C03** 준비 중
-- **GCP Cloud Operations 개인 프로젝트** · 설계·환경 준비 중
+- **AWS SAA-C03** 준비
+- **GCP Cloud Operations 개인 프로젝트** · 설계·환경 준비
 
-## Contact
+## 연락처
 
 [cloud-infra-portfolio.vercel.app](https://cloud-infra-portfolio.vercel.app/) · [wkfkeha784@gmail.com](mailto:wkfkeha784@gmail.com)
-
----
-
-**Build → Observe → Troubleshoot → Recover → Verify**
