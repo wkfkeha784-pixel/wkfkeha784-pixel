@@ -2,7 +2,7 @@
 
 **Cloud Infrastructure Engineer · 클라우드 인프라 엔지니어**
 
-AWS와 OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성하고, 서비스 요청 경로와 장애 대응·복구 과정을 검증했습니다. Linux·네트워크·자동화·모니터링을 중심으로 공부하고 있습니다.
+AWS·OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성하고 서비스 요청 경로와 장애 대응·복구 과정을 검증했습니다. Linux·네트워크·자동화와 모니터링 경험을 바탕으로 클라우드 인프라 엔지니어 직무를 준비하고 있습니다.
 
 **[웹 포트폴리오 보기](https://cloud-infra-portfolio.vercel.app/)** · [포트폴리오 소스](https://github.com/wkfkeha784-pixel/cloud-infra-portfolio) · [이메일](mailto:wkfkeha784@gmail.com)
 
@@ -22,7 +22,7 @@ AWS와 OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성�
 **AWS · Nginx/Flask · Docker Swarm · Ansible · Prometheus/Grafana**
 
 - **5인 팀의 팀장**으로 AWS Web/WAS와 로드밸런서를 연결하고, 요청 경로·배포 상태·복구 후 서비스 응답을 통합 검증했습니다.
-- 인스턴스 교체 시험에서 **Target Group 정상 상태와 HTTP/API 응답**, 모니터링 대상 재편입을 함께 확인했습니다.
+- 통제된 인스턴스 교체 시험에서 **Target Group 정상 상태와 HTTP/API 응답**, 모니터링 대상 재편입을 함께 확인했습니다.
 
 **[구축과 복구 검증 과정 보기](https://cloud-infra-portfolio.vercel.app/projects/bluebell)**
 
@@ -45,7 +45,7 @@ AWS와 OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성�
 | 클라우드·인프라 | AWS, OpenStack, Linux, 네트워크, Nginx, Kubernetes |
 | 배포·자동화 | Docker Swarm, Ansible, Terraform, GitHub Actions |
 | 메시징·관측 | Redis, Kafka, KEDA, Prometheus, Grafana |
-| 서비스 연동 | Flask API, REST/SSE, React·TypeScript, WebSocket |
+| 서비스·화면 연동 (OneReport·Labbit) | Flask API, REST/SSE, React·TypeScript, WebSocket |
 
 ## 경력·교육
 
@@ -54,4 +54,3 @@ AWS와 OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성�
 - **KT Cloud Infrastructure Bootcamp** (2026.05–2026.12 예정) — AWS·OpenStack·Kubernetes 기반 인프라 교육 및 팀 프로젝트
 - **보유 자격·어학** — 컴퓨터활용능력 2급, G-TELP Level 2(84점)
 
-프로젝트별 실제 화면, 아키텍처, 문제 해결 과정과 검증 결과는 **[웹 포트폴리오](https://cloud-infra-portfolio.vercel.app/)**에 정리했습니다.
