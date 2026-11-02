@@ -10,9 +10,7 @@
 |---|---|---|
 | `wkfkeha784-pixel/wkfkeha784-pixel` | public | 프로필 첫 화면 README 최신화 |
 | `wkfkeha784-pixel/cloud-infra-portfolio` | public | 저장소 README의 프로젝트 설명 및 링크 정합성 최신화 |
-| `wkfkeha784-pixel/KT-cloud-study` | private | Obsidian WikiLink·메모와 공개 범위 유지, 변경 안 함 |
-| `wkfkeha784-pixel/personal-finance` | private | 재무 데이터·코드 보호, 변경 안 함 |
-| `wkfkeha784-pixel/career-application-log` | private | 지원 원장·자소서·증빙 보호, 변경 안 함 |
+| 개인 비공개 학습·재정·취업 기록 저장소 (합계 3개) | private | 현재 공개 범위와 원본 그대로 유지, 이번 작업에서 변경 안 함 |
 
 두 공개 저장소 밖의 팀 공동 저장소 `ktcloud4-SL/labbit-app`은 읽기 근거·공개 링크만 사용했으며 커밋하지 않았다. 개인의 경력·지원서 PDF나 제출 원본을 공개 저장소에 올리지 않았다.
 
