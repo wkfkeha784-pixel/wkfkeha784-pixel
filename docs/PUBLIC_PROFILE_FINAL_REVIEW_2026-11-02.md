@@ -37,7 +37,7 @@
 
 - GitHub 연결 계정으로 현재 `README.md` 및 `docs/README.md` 파일과 각 저장소 visibility를 확인하고 해당 파일의 최신 SHA를 기준으로 수정·커밋. 커밋 후 파일 원문 재조회와 상대 링크·외부 주소 문자열 검사를 수행.
 - GitHub 웹 사이트의 **실제 로그아웃 렌더, 고정(Pinned) 저장소 배치, 사용자 Bio·Website·저장소 About 설명 설정은 현 연결 API에서 현재값을 읽거나 변경할 수 없음**. 기존 2026-10-11 관리 기록에 당시 고정 순서는 포트폴리오 → 팀 Labbit이라고 기록돼 있으나, 이를 2026-11-02 현재 실측값으로 주장하지 않는다.
-- README 콘텐츠 변경과 별개로 웹 포트폴리오 애플리케이션 구현 소스, PDF/PPTX v0.29, 배포 환경 설정은 변경하지 않음. README 커밋으로 Vercel 신규 배포가 발생할 수 있으므로 실제 deployment 기록을 확인해야 한다.
+- README 콘텐츠 변경과 별개로 웹 포트폴리오 애플리케이션 구현 소스, PDF/PPTX v0.29, 배포 환경 설정은 변경하지 않음. **포트폴리오 README 문서 커밋 `157acd32919265c14404b9755e7d9c55e94e6934`로 새 Vercel Production `dpl_HreniFLJm4nL58LeAnssGUB5ZDcg`가 생성돼 READY** 및 운영 alias `cloud-infra-portfolio.vercel.app`, Git SHA 일치를 API에서 확인. README-only 커밋의 `fetch_commit_workflow_runs` 목록이 비어 있었으므로 해당 커밋에 별도 PR CI가 성공했다고 주장하지 않음. 이전 웹 기능/반응형 Playwright 72/72 PASS는 코드 변경 직전 PR #37의 검증 이력으로 유지.
 
 ## GitHub 사이트에서 수동으로 확인할 항목
 
