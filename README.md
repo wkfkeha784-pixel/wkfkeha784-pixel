@@ -45,7 +45,7 @@ AWS·OpenStack·Kubernetes 기반 팀 프로젝트에서 인프라를 구성하�
 | 클라우드·인프라 | AWS, OpenStack, Linux, 네트워크, Nginx, Kubernetes |
 | 배포·자동화 | Docker Swarm, Ansible, Terraform, GitHub Actions |
 | 메시징·관측 | Redis, Kafka, KEDA, Prometheus, Grafana |
-| 서비스·화면 연동 (OneReport·Labbit) | Flask API, REST/SSE, React·TypeScript, WebSocket |
+| 서비스·API 연동 | Flask API(Bluebell), FastAPI·REST/SSE(OneReport), React·TypeScript·WebSocket(Labbit) |
 
 ## 경력·교육
 
